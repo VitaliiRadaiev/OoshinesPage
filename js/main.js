@@ -37,13 +37,17 @@ $(document).ready(function(){
 
 	sortActive.onclick = () => {
 		console.log('clik')
-		list.style.maxHeight = list.scrollHeight + 'px';
-		for(let item of list.children) {
-			item.addEventListener('click', () => {
-				console.log(item.innerHTML)
-				sortActive.innerHTML = item.innerHTML + '<span class="icon-chevron-down"></span>';
-				list.style.maxHeight = '0px';
-			})
+		if(list.style.maxHeight) {
+			list.style.maxHeight = null;
+		} else {
+			list.style.maxHeight = list.scrollHeight + 'px';
+			for(let item of list.children) {
+				item.addEventListener('click', () => {
+					console.log(item.innerHTML)
+					sortActive.innerHTML = item.innerHTML + '<span class="icon-chevron-down"></span>';
+					list.style.maxHeight = '0px';
+				})
+			}
 		}
 	}
 
