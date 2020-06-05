@@ -1,0 +1,32 @@
+@font-face {  /*подключение шрифта*/
+	font-family: "VAG Rounded";
+	src: url("../fonts/VAGRounded-Black.otf") format('truetype');
+	src: url("../fonts/VAGRounded Lt Normal.ttf") format('truetype');
+	font-display: swap;
+}
+
+//font-family: "VAG Rounded", sans-serif;
+
+@font-face {  /*подключение шрифта*/
+	font-family: "Tobi Black";
+	src: url("../fonts/Tobi Black.otf") format('truetype');
+	font-display: swap;
+}
+
+//font-family: "Tobi Black", sans-serif;
+
+@font-face {  /*подключение шрифта*/
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Regular.ttf") format('truetype');
+	font-weight: 400;
+	font-display: swap;
+}
+
+
+@font-face {  /*подключение шрифта*/
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Bold.ttf") format('truetype');
+	font-weight: bold;
+	font-display: swap;
+}
+//font-family: "OpenSans", sans-serif;

@@ -1,0 +1,54 @@
+//@import "../icomoon/style";
+
+html {
+	box-sizing: border-box;
+	min-height: 100%;
+
+}
+*,*::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "VAG Rounded", sans-serif;
+	min-width: 320px;
+	position: relative;
+	background: #fff;
+	max-width: 3000px;
+	margin: auto;
+	min-height: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main {
+	min-height: 100%;
+}
+
+.container {
+	width: 1740px;
+	margin: 0 auto;
+}
+
+.bottom-line {
+	padding-bottom: 10px;
+	position: relative;
+	&::before {
+		position:absolute;
+		content: '';
+		height: 7px;
+		width: 100%;
+		bottom: 0;
+		background: #fff;
+		box-shadow: 0px 8px 10px 0px #c9c9c9;
+	}
+} 
+
+
